@@ -230,7 +230,7 @@
         <!--Search-->
         <scene sceneID="Bad-wd-WWR">
             <objects>
-                <viewController id="Shl-ak-eOa" sceneMemberID="viewController">
+                <viewController id="Shl-ak-eOa" customClass="SearchViewController" customModule="Demo_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aMd-dY-olt">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -264,7 +264,7 @@
         <!--Profile-->
         <scene sceneID="xjC-e5-qtk">
             <objects>
-                <viewController id="Al7-sJ-yLd" sceneMemberID="viewController">
+                <viewController id="Al7-sJ-yLd" customClass="ProfileViewController" customModule="Demo_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lTr-or-2nL">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
