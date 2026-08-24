@@ -17,7 +17,7 @@ class HomeCollectionViewCell: UICollectionViewCell {
         storyImage.layer.cornerRadius = storyImage.frame.height / 2
         storyImage.clipsToBounds = true
         storyImage.layer.borderWidth = 2
-        storyImage.layer.borderColor = UIColor.systemPink.cgColor
+        storyImage.layer.borderColor = UIColor.systemPink.cgColor
         // Initialization code
     }
 
