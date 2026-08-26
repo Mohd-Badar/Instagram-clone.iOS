@@ -1,21 +1,52 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="24765" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24743"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="MessageTableViewCell" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MessageTableViewCell" rowHeight="70" id="KGk-i7-Jjw" customClass="MessageTableViewCell" customModule="Demo_app" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="338" height="70"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <rect key="frame" x="0.0" y="0.0" width="338" height="70"/>
                 <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="post1" translatesAutoresizingMaskIntoConstraints="NO" id="cZ3-8z-ljz">
+                        <rect key="frame" x="10" y="10" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="uMM-1v-qgz"/>
+                            <constraint firstAttribute="height" constant="50" id="vbr-0D-gx9"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mohd Badar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WOK-Fd-Ot9">
+                        <rect key="frame" x="70" y="24.666666666666671" width="92.666666666666686" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="WOK-Fd-Ot9" firstAttribute="centerY" secondItem="cZ3-8z-ljz" secondAttribute="centerY" id="E7b-0z-LYQ"/>
+                    <constraint firstItem="WOK-Fd-Ot9" firstAttribute="leading" secondItem="cZ3-8z-ljz" secondAttribute="trailing" constant="10" id="KUW-UK-AL4"/>
+                    <constraint firstItem="cZ3-8z-ljz" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="boJ-tJ-KFp"/>
+                    <constraint firstItem="cZ3-8z-ljz" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ckn-9Z-XJv"/>
+                    <constraint firstItem="cZ3-8z-ljz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="jc4-kW-6Bp"/>
+                </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="messageImage" destination="cZ3-8z-ljz" id="6o4-gv-SCk"/>
+                <outlet property="messageLabel" destination="WOK-Fd-Ot9" id="srt-EW-stQ"/>
+            </connections>
+            <point key="canvasLocation" x="7.6335877862595414" y="104.92957746478874"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="post1" width="1086" height="1448"/>
+    </resources>
 </document>

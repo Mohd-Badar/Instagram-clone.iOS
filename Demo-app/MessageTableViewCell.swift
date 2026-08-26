@@ -9,8 +9,13 @@ import UIKit
 
 class MessageTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var messageLabel: UILabel!
+    @IBOutlet weak var messageImage: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+        messageImage.layer.cornerRadius = messageImage.frame.height / 2
+        messageImage.clipsToBounds = true
         // Initialization code
     }
 
