@@ -1,6 +1,6 @@
 //
 //  HomeCollectionViewCell.swift
-//  Demo-app
+// Instagram clone app
 //
 //  Created by Mohd Badar on 13/08/26.
 //
