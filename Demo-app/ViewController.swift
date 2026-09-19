@@ -1,9 +1,8 @@
-//
+
 //  ViewController.swift
-//  Demo-app
-//
+//  Instagram clone App
 //  Created by Mohd Badar on 12/08/26.
-//
+
 
 import UIKit
 
