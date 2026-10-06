@@ -1,9 +1,6 @@
-//
 //  MessageTableViewCell.swift
 //  Demo-app
-//
-//  Created by Mohd Badar on 26/08/26.
-//
+//  Created by Mohd Badar on 26/08/26
 
 import UIKit
 
