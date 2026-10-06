@@ -1,9 +1,6 @@
-//
 //  ProfileCollectionViewCell.swift
 //  Demo-app
-//
-//  Created by Mohd Badar on 25/08/26.
-//
+//  Created by Mohd Badar on 25/08/26
 
 import UIKit
 
