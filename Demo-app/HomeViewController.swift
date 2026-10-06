@@ -1,9 +1,6 @@
-//
 //  HomeViewController.swift
 //  Demo-app
-//
-//  Created by Mohd Badar on 13/08/26.
-//
+//  Created by Mohd Badar on 13/08/26
 
 import UIKit
 
